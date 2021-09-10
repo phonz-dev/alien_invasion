@@ -133,6 +133,9 @@ class AlienInvasion:
             self.sb.prep_score()
             self.sb.check_high_score()
 
+        self._start_new_level()
+
+    def _start_new_level(self):
         if not self.aliens:
             # Destroy existing bullets and create new fleet.
             self.bullets.empty()
